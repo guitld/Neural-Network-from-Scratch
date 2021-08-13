@@ -5,7 +5,7 @@
 The MNIST is a dataset of handwritten digits with a training set of 60.0000 samples and a test set of 10.000 samples.
 To preprocess the data, all the images were normalized and the output were encoded to vectors
 
-![Untitled](Digit%20Recognition%20with%20Neural%20Network%2026e76f8ce6a04e60ab1df48f0628db08/Untitled.png)
+![Untitled](https://i.stack.imgur.com/GKx1A.png)
 
 # The Network's Architecture
 

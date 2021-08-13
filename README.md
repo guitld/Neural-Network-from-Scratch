@@ -1,4 +1,4 @@
-# Digit Recognition with Neural Network
+# Neural Network from Scratch
 
 # MNIST Dataset
 

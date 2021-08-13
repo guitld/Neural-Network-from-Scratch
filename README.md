@@ -1,4 +1,5 @@
 # Neural Network from Scratch
+This is a simple MLP developed in plain NumPy. The main idea is to recognize hand-written digits.
 
 # MNIST Dataset
 

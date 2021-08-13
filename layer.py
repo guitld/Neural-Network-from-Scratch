@@ -26,6 +26,7 @@ class Layer:
     #  dL    dL   dA   dZ       |  dL                  |  dA                        |  dZ            |
     # ———— = —— · —— · ——  ---> |  —— = dLossFunction  |  —— = dActivationFunction  |  —— = 1        |
     # dB_i   dA   dZ   dW       |  dA                  |  dZ                        |  dB            |
+    
     def backward(self, output_grad, learning_rate):
         output_grad = np.multiply(output_grad, self.activation_grad(self.z))
         dW = np.dot(output_grad, self.input.transpose())

@@ -25,6 +25,12 @@ def softplus(x):
 def softplus_grad(x):
     return 1 / 1 + np.exp(-x)
 
+def gaussian(x):
+    return np.exp(-np.power(x, 2))
+
+def gaussian_grad(x):
+    return -2 * np.exp(-np.power(x, 2))
+
 def sigmoid(x):
     s = 1/(1+np.exp(-x)) 
     return s

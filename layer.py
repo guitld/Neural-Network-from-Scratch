@@ -6,8 +6,8 @@ class Layer:
         self.weights = np.random.randn(output_dim, input_dim)
         self.biases = np.random.randn(output_dim, 1)
         
-        self.activation = activations.activationFunctions[activation_func][0]
-        self.activation_grad = activations.activationFunctions[activation_func][1]
+        self.activation = activations.activation_functions[activation_func][0]
+        self.activation_grad = activations.activation_functions[activation_func][1]
 
     # Calculates the next activation layer
     def forward(self, x):

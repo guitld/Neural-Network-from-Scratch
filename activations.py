@@ -19,6 +19,12 @@ def tanh(x):
 def tanh_grad(x):
     return 1 - np.power(tanh(x), 2)
 
+def softplus(x):
+    return np.log(1 + np.exp(x))
+
+def softplus_grad(x):
+    return 1 / 1 + np.exp(-x)
+
 def sigmoid(x):
     s = 1/(1+np.exp(-x)) 
     return s

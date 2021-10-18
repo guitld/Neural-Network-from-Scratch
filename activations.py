@@ -21,3 +21,9 @@ def sigmoid_grad(x):
     s = sigmoid(x)
     ds = s*(1-s)
     return ds
+
+activationFunctions = {
+    "relu": [relu, relu_grad],
+    "softmax": [softmax, softmax_grad],
+    "sigmoid": [sigmoid, sigmoid_grad]
+}

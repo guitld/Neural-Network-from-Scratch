@@ -13,6 +13,24 @@ def softmax(x):
 def softmax_grad(x):
     return x
 
+def tanh(x):
+    return (np.exp(x) - np.exp(-x)) / (np.exp(x) - np.exp(-x))
+
+def tanh_grad(x):
+    return 1 - np.power(tanh(x), 2)
+
+def softplus(x):
+    return np.log(1 + np.exp(x))
+
+def softplus_grad(x):
+    return 1 / 1 + np.exp(-x)
+
+def gaussian(x):
+    return np.exp(-np.power(x, 2))
+
+def gaussian_grad(x):
+    return -2 * np.exp(-np.power(x, 2))
+
 def sigmoid(x):
     s = 1/(1+np.exp(-x)) 
     return s
@@ -25,5 +43,8 @@ def sigmoid_grad(x):
 activation_functions = {
     "relu": [relu, relu_grad],
     "softmax": [softmax, softmax_grad],
+    "tanh": [tanh, tanh_grad],
+    "softplus": [softplus, softplus_grad],
+    "gaussian": [gaussian, gaussian_grad],
     "sigmoid": [sigmoid, sigmoid_grad]
 }

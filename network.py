@@ -15,7 +15,8 @@ class NeuralNetwork:
         for layer in architecture:
             layer_input_size = layer["input_dim"]
             layer_output_size = layer["output_dim"]
-            self.layers.append(Layer(layer_input_size, layer_output_size))
+            layer_activation = layer["activation"]
+            self.layers.append(Layer(layer_input_size, layer_output_size, layer_activation))
             
     # Calls forwardprop method for each layer
     def forward_prop(self, x):
